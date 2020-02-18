@@ -1,0 +1,12 @@
+﻿@Model List<OrdenesDeTrabajo.Web.ProductoModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Ordenes de Trabajo </h2>
+ @foreach (var Producto in Model)
+ {
+   <p>@Producto.Id @Producto.Descripcion</p>
+ }
+
